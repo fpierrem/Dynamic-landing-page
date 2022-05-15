@@ -6,7 +6,7 @@ focusTimeframe = document.getElementById('focusTimeframe'),
 focus = document.getElementById('focus'),
 imageCredit = {
   "morning":`Photo by Lukas Hartmann: <a href="https://www.pexels.com/photo/photo-of-white-and-black-animal-on-green-field-near-tree-1276238/">Source</a>`, 
-  "afternoon":`Photo by ArtHouse Studio: <a href="https://www.pexels.com/photo/rocks-near-creek-under-cloudy-sky-in-daylight-4344255/">Source</a>`,
+  "afternoon":`Photo by Engin Akyurt: <a href="https://www.pexels.com/photo/scenic-view-of-ocean-during-daytime-2456432/">Source</a>`, 
   "evening":`Photo by Julia Volk: <a href="https://www.pexels.com/photo/row-of-fishing-boats-on-clear-sea-7293095/">Source</a>`,
   "night":`Photo by Tommy Haugsveen: <a href="https://www.pexels.com/photo/silhouette-of-trees-under-starry-night-1361215/">Source</a>`
 }
@@ -32,27 +32,27 @@ function displayTime(){
 function setGreetingAndImage(){
   h = today.getHours();
   if (h >= 4 && h < 12) {
+    document.body.style.background = "url('Images/morning.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good morning, ";
     focusTimeframe.innerHTML = "What shall we do today?"
-    document.body.style.background = "url('Images/morning.jpeg')no-repeat center center/cover";
     document.getElementById("credit").innerHTML = imageCredit["morning"];
   };
   if (h >= 12 && h < 18) {
+    document.body.style.background = "url('Images/afternoon.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good afternoon, ";
     focusTimeframe.innerHTML = "What shall we do today?"
-    document.body.style.background = "url('Images/afternoon.jpeg')no-repeat center center/cover";
     document.getElementById("credit").innerHTML = imageCredit["afternoon"];
   };
   if (h >= 18 && h < 22) {
+    document.body.style.background = "url('Images/evening.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good evening, ";
     focusTimeframe.innerHTML = "What shall we do tonight?"
-    document.body.style.background = "url('Images/evening.jpeg')no-repeat center center/cover";
     document.getElementById("credit").innerHTML = imageCredit["evening"];
   };
   if (h >= 22 || h < 4) {
+    document.body.style.background = "url('Images/night.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good night, ";
     focusTimeframe.innerHTML = "What shall we do tomorrow?"
-    document.body.style.background = "url('Images/night.jpeg')no-repeat center center/cover";
     document.getElementById("credit").innerHTML = imageCredit["night"];
   };
 }
@@ -60,7 +60,7 @@ function setGreetingAndImage(){
 // Get name
 function getName(){
   if (localStorage.getItem('name') === null){
-    name.innerHTML = "[your name here]";
+    name.innerHTML = "[Your name here]";
   }
   else {
     name.innerHTML = localStorage.getItem('name');
@@ -83,7 +83,7 @@ function setName(e) {
 // Get focus
 function getFocus(){
   if (localStorage.getItem('focus') === null){
-    focus.innerHTML = "[type it here]";
+    focus.innerHTML = "[Type it here]";
   }
   else {
     focus.innerHTML = localStorage.getItem('focus');

@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-size: contain;
 }
 
 #time {
@@ -21,14 +22,30 @@ h1 {
   margin-bottom: 3rem;
 }
 
+.focus-area {
+  background-color:rgba(255,255,255,0.7);
+  color:black;
+  font-size: 13px;
+  font-family: 'Courier New', Courier, monospace;
+  padding:0.25rem 2rem;
+  /* width:100vw; */
+  border-radius: 10px;
+}
+
+
 h2 {
   margin-bottom: 0.5rem;
-  opacity: 0.6;
+}
+
+#name, #focus {
+  outline:none;
 }
 
 footer {
-  position:absolute;
-  bottom:20px;
+  position:fixed;
+  bottom:10px;
+  left:0;
+  width: 100%;
 }
 
 footer > a, a:visited, a:active {

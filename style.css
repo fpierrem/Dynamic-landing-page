@@ -18,12 +18,21 @@ body {
 }
 
 h1 {
-  margin-bottom: 3rem:
+  margin-bottom: 3rem;
 }
 
 h2 {
   margin-bottom: 0.5rem;
   opacity: 0.6;
+}
+
+footer {
+  position:absolute;
+  bottom:20px;
+}
+
+footer > a, a:visited, a:active {
+  color:inherit;
 }
 
 @media (max-width: 700px) {

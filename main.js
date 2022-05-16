@@ -32,25 +32,25 @@ function displayTime(){
 function setGreetingAndImage(){
   h = today.getHours();
   if (h >= 4 && h < 12) {
-    document.body.style.background = "url('Images/morning.jpeg')no-repeat center center/cover";
+    document.body.style.background = "url('Images/compressjpeg/morning-min.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good morning, ";
     focusTimeframe.innerHTML = "What shall we do today?"
     document.getElementById("credit").innerHTML = imageCredit["morning"];
   };
   if (h >= 12 && h < 18) {
-    document.body.style.background = "url('Images/afternoon.jpeg')no-repeat center center/cover";
+    document.body.style.background = "url('Images/compressjpeg/afternoon-min.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good afternoon, ";
     focusTimeframe.innerHTML = "What shall we do today?"
     document.getElementById("credit").innerHTML = imageCredit["afternoon"];
   };
   if (h >= 18 && h < 22) {
-    document.body.style.background = "url('Images/evening.jpeg')no-repeat center center/cover";
+    document.body.style.background = "url('Images/compressjpeg/evening-min.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good evening, ";
     focusTimeframe.innerHTML = "What shall we do tonight?"
     document.getElementById("credit").innerHTML = imageCredit["evening"];
   };
   if (h >= 22 || h < 4) {
-    document.body.style.background = "url('Images/night.jpeg')no-repeat center center/cover";
+    document.body.style.background = "url('Images/compressjpeg/night-min.jpeg')no-repeat center center/cover";
     greeting.innerHTML = "Good night, ";
     focusTimeframe.innerHTML = "What shall we do tomorrow?"
     document.getElementById("credit").innerHTML = imageCredit["night"];

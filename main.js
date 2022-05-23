@@ -5,10 +5,10 @@ name = document.getElementById('name'),
 focusTimeframe = document.getElementById('focusTimeframe'),
 focus = document.getElementById('focus'),
 imageCredit = {
-  "morning":`Photo by Lukas Hartmann: <a href="https://www.pexels.com/photo/photo-of-white-and-black-animal-on-green-field-near-tree-1276238/">Source</a>`, 
-  "afternoon":`Photo by Engin Akyurt: <a href="https://www.pexels.com/photo/scenic-view-of-ocean-during-daytime-2456432/">Source</a>`, 
-  "evening":`Photo by Julia Volk: <a href="https://www.pexels.com/photo/row-of-fishing-boats-on-clear-sea-7293095/">Source</a>`,
-  "night":`Photo by Tommy Haugsveen: <a href="https://www.pexels.com/photo/silhouette-of-trees-under-starry-night-1361215/">Source</a>`
+  "morning":"Photo by Jeremy Bishop", 
+  "afternoon":"Photo by Engin Akyurt", 
+  "evening":"Photo by Julia Volk",
+  "night":"Photo by Tommy Haugsveen"
 }
 
 name.addEventListener('keypress', setName);
